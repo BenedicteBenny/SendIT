@@ -59,6 +59,7 @@ header ul{
 	background-image: url("../IMG/origine.jpg") ;
 	background-size: cover;
 	height: 55%;
+	text-align: center;
 	
 }
 #textAlt{
@@ -90,18 +91,24 @@ header ul{
 	width:20%;
 }
 
-#sendorder button{
-	background-color: #ad974f;
-	padding:10px 20px 10px 20px;
-	text-align: center;
-	width: 100%;
-	border: solid 1px #231f20;
-	color: #eaeaea;
+/*#getStarted{
+	margin: 10% 45%;
+}*/
+#getStarted a{
+	color:#e7e7e7;
+	background-color: #ad974f; 
 	font-size: 16px;
-	margin-top: 45%;
+	display: block;
+	padding:12px 15px;
+	width: 100px;
+	text-align:center;
+	margin: 5% auto;
+	text-decoration: none
 }
-#sendorder button:hover{
-	background-color: #8e793e;
+
+#getStarted a:hover, #getStarted a:focus {
+	opacity: 0.6;
+
 }
 form select{
 	width: 92%;

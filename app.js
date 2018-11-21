@@ -39,19 +39,34 @@ app.get('/api/v1/parcels/:id', (req, res)=>{
 
 
 app.post('/api/v1/parcels', body,  (req , res)=>{
-	const schema= {
-		parcelName: Joi.string().required(),
-		from: Joi.string().required(),
-		to: Joi.string().required(),
+	const schema1= {
+		parcelName: Joi.string().required()
+	};
+	const result1 =Joi.validate(req.body,schema1);
+
+	const schema2= {
+		from: Joi.string().required()
+	};
+	const result2 =Joi.validate(req.body,schema2);
+
+	const schema3= {
+		to: Joi.string().required()
+	};
+	const result3 =Joi.validate(req.body,schema3);
+
+	const schema4= {
 		weight: Joi.number().required(),
 	};
-	const result =Joi.validate(req.body,schema);
-	console.log(result);
+	const result4 =Joi.validate(req.body,schema4);
 
-	if(result.error){
-		res.status(400).send(result.error);
+	if(result1.error || result2.error || result3.error || result4.error){
+		res.status(400).send(result1.error);
+		res.status(400).send(result2.error);
+		res.status(400).send(result3.error);
+		res.status(400).send(result4.error);
 		return;
 	}
+
 
 	const parcel= {
 		id: parcels.length+1,
