@@ -1,0 +1,26 @@
+{
+  "name": "sendit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenedicteBenny/Sendit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenedicteBenny/Sendit/issues"
+  },
+  "homepage": "https://github.com/BenedicteBenny/Sendit#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "joi": "^14.1.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3"
+  }
+}
