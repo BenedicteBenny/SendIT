@@ -1,0 +1,138 @@
+body{
+	font:15px/1.5 Arial, Helvetica, sans-serif;
+}
+
+
+/*Global*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/*Header*/
+
+header{
+	width: 100%;
+	padding-top: 0px;
+	background-color: #ffffff;
+}
+
+.img{
+	width: 30px;
+	height: 24px;
+}
+.payment .box{
+	margin:2% ;	
+	padding: 5px;
+	border-radius: 8px;
+	float: left; 
+	background-color: #fff; 	
+}
+.payment .box:hover, .payment .box:focus{
+	margin-top: 1.4%;
+}
+#pay1{
+	border: 1px #1A1F71 solid;
+}
+#pay2{
+	border: 1px #E0102A solid;
+}
+#pay3{
+	border: 1px #64A52F solid;
+}
+#pay4{
+	border: 1px #F90100 solid;
+}
+#pay5{
+	border: 1px #FFCB06 solid;
+}
+#pay6{
+	border: 1px #AA4C02 solid;
+}
+.order{
+	float:left;
+	width: 35%;
+}
+.payment{
+	width: 65%;
+	float: right;
+	background-color: #231f20;
+	padding-top: 1%;
+	text-align: center;
+}
+.payment h3{
+	color:#fff;
+}
+
+
+.order h3{
+	padding: 10px;
+	border-bottom: solid 1px #d1d1d1;
+}
+.formsignin{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	padding: 40px;
+}
+
+form select{
+	width: 92%;
+}
+
+form input, select{
+	width: 70%;
+    padding: .5em .25em;
+    margin: 2% 10%;   
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    border: solid 1px #eaeaea;
+    background-color: #231f20;
+    color: #eaeaea;
+}
+input:hover,select:hover{
+	border: solid 1px #ad974f;
+	opacity: 0.7;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{ 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+ button{
+	background-color: #ad974f;
+	padding:10px 20px 10px 20px;
+	text-align: center;
+	width: 49.5%;
+	border: solid 1px #ad974f;
+	color: #eaeaea;
+	font-size: 16px;
+}
+button:hover{
+	background-color: #8e793e;
+	border: solid 1px #8e793e;
+}
+table{
+	width: 100%;
+	padding: 0 20px;
+	
+}
+.total{
+	border-top: solid 1px #eaeaea;
+}
+td{
+	width: 30%;
+}
+.total h3{
+	border-bottom: 0px;
+}
+#name, #pickup, #des, #weight, #height, #width, #price{
+	text-align: right;
+}
