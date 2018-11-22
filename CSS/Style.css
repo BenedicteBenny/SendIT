@@ -197,21 +197,21 @@ footer p{
 	text-align: center;
 }
 .formsignin{
-	width: 50%;
+	width: 100%;
 	text-align: center;
 	margin: auto;
 	padding: 40px;
+	background-color: #231f20; 
 }
 
 .formsignin input{
-	width: 80%;
+	width: 20%;
 }
 
 .formsignin button{
 	background-color: #ad974f;
 	padding:10px 20px 10px 20px;
 	text-align: center;
-	width: 40%;
 	border: solid 1px #231f20;
 	color: #eaeaea;
 	font-size: 16px;
