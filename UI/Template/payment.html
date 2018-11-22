@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>SenIT | Payments</title>
+	
+	<link rel="stylesheet" type="text/css" href="../CSS/payment.css">
+	
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="logo">
+				<h1>SendIT</h1>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div id="parcelpay" class="container">
+			<div class="order">
+				<table>
+					<tr>
+						<td><h3>Parcel name :</h3></td>
+						<td id="name">T-shirt</td>
+					</tr>
+					<tr>
+						<td><h3>Locatins</h3></td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>From :</td>
+						<td id="pickup">Kigali</td>
+					</tr>
+					<tr>
+						<td>Destination :</td>
+						<td id="des">huye</td>
+					</tr>
+					<tr>
+						<td><h3>Parcel Details</h3></td>
+						<td> </td>
+					</tr>
+					<tr >
+						<td>Weight :</td>
+						<td id="weight">40</td>
+					</tr>
+					<tr>
+						<td>Height :</td>
+						<td id="height">30</td>
+						
+					</tr>
+					<tr>
+						<td>Width :</td>
+						<td id="width">40</td>
+					</tr>
+					
+				</table>
+				<table class="total">
+					<tr>
+						<td><h3>Price :</h3></td>
+						<td id="price">5000</td>
+					</tr>
+				</table>
+			</div>
+			<div class="payment">
+				
+					<h3>Online payment</h3>
+				
+				<div class="container">
+					<div class="box" id="pay1">
+						<img src="../IMG/visa.png" class="img" >
+				</div>
+				<div class="box" id="pay2">
+					<img src="../IMG/mastercard.jpg" class="img">
+				</div>
+				<div class="box" id="pay3">
+					<img src="../IMG/mpesa.jpg" class="img">
+				</div>
+				<div class="box" id="pay4">
+					<img src="../IMG/airtel.jpg" class="img">
+				</div>
+				<div class="box" id="pay5">
+					<img src="../IMG/mtn.jpeg" class="img">
+				</div>
+				<div class="box" id="pay6">
+					<img src="../IMG/equity.png" class="img">
+				</div>
+			</div>
+				<form>
+						<input type="text" name="horder" id="holder" placeholder="Holder name">
+						
+						<input type="text" name="card" id="" placeholder="Card Number">
+						
+						<input type="date" name="date" id="date" placeholder="Expiration Date">
+						
+						<input type="TEXT" name="cvc" id="cvc" placeholder="CVC Code">
+						
+						<div><button class="payorder">PAY</button>
+					<button>Cancel</button></div>
+				</form>
+
+
+			</div>
+			
+		</div>
+		
+	</section>
+
+<script src="template.js"></script>
+</body>
+</html>

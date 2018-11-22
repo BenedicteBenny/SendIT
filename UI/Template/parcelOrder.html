@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>SendIT | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/modal.css">
+</head>
+<body>
+	<div class="modal" id="orderModal">
+		<div id="modal-content">
+			<span class="closebtn">&times;</span></h3>
+			<div class="modal-header">
+				<h3>Your parcel details</h3>
+				
+			</div>
+			<div class="modal-body">
+					<div class="order">
+						<table>
+							<tr>
+								<td><h3>Parcel name :</h3></td>
+								<td id="name"></td>
+							</tr>
+							<tr>
+								<td><h3>Locatins</h3></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td>From :</td>
+								<td id="pickup"></td>
+							</tr>
+							<tr>
+								<td>Destination :</td>
+								<td id="des"></td>
+							</tr>
+							<tr>
+								<td><h3>Parcel Details</h3></td>
+								<td> </td>
+							</tr>
+							<tr >
+								<td>Weight :</td>
+								<td id="weight"></td>
+							</tr>
+							<tr>
+								<td>Height :</td>
+								<td id="height"></td>
+						
+							</tr>
+							<tr>
+								<td>Width :</td>
+								<td id="width"></td>
+							</tr>
+							<tr>
+								<td>Length :</td>
+								<td id="length"></td>
+							</tr>
+					
+						</table>
+						<table class="total">
+							<tr>
+								<td><h3>Price :</h3></td>
+								<td id="price"></td>
+							</tr>
+						</table>
+						<a href="parcelOrder.html" id="modal-cancel">Change</a>	
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">	
+				
+			</div>
+		</div>
+    </div>
+
+	<header>
+		<div class="container">
+			<div id="logo">
+				<h1>SendIT</h1>
+			</div>			
+			<div>
+				<ul>
+					<li ><a href="#">Home</a></li>
+					<li class="current"><a href="parcelOrder.html">Parcel Order</a></li>
+					<li><a href="allParcels.html">All Parcels</a></li>
+					<li><a href="#howework">How we work</a></li>
+					<li><a href="#pickup">Pick Up</a></li>
+					<li><a href="index.html" id="sign" >Sign out</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section>
+			<div class="formsignin">
+					
+						<div>
+							<h3>Locations</h3>
+							<form>
+								<select name="pickup" id="pickuplo" placeholder="Pick up location">
+									<option value="">Pick up location</option>
+									  <option value="Gikondo">Gikondo</option>
+									  <option value="Kagarama">Kagarama</option>
+									  <option value="Kanombe">Kanombe</option>
+									  <option value="Muhima">Muhima</option>
+									  <option value="Kicukiro">Kicukiro</option>
+									  <option value="Kacyiru">Kacyiru</option>
+									  <option value="Remera">Remera</option>
+									  <option value="Nyamirambo">Nyamirambo</option>
+									  <option value="Kimihurura">Kimihurura</option>
+									  <option value="Kimisagara">Kimisagara</option>
+									  <option value="Gitega">Gitega</option>
+								</select>
+								<br>
+								
+								<input type="text" name="Destination" id="Destination" placeholder="Destination">
+							</form>
+						</div>
+						<div>
+							<form>
+									<h3>parcel Details</h3>
+									<input type="text" name="Pname" placeholder="Parcel name"><br>
+									<input type="number" name="p_weight" placeholder="Parcel weight">
+									<input type="number" name="p_weight" placeholder="Parcel Height"><br>
+									<input type="number" name="p_width" placeholder="Parcel width">
+									<input type="number" name="p_length" placeholder="Parcel legnth"><br>
+							</form>
+							
+						</div>
+						
+						<button>Send</button>
+						<button>Cancel</button>
+					</form>
+					<div class="anychange">
+						<ul><a href="signin.html">Already have an account?</a></ul>
+					</div>
+			</div>
+		
+	</section>
+	
+	<footer>
+		<p>SendIT, copyright &copy; 2018</p>
+	</footer>
+	
+</body>
+</html>

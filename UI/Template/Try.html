@@ -1,0 +1,148 @@
+	<div class="modal" id="orderModal">
+		<div id="modal-content">
+			<span class="closebtn">&times;</span></h3>
+			<div class="modal-header">
+				<h3>Your parcel details</h3>
+				
+			</div>
+			<div class="modal-body">
+					<div class="order">
+						<table>
+							<tr>
+								<td><h3>Parcel name :</h3></td>
+								<td id="name"></td>
+							</tr>
+							<tr>
+								<td><h3>Locatins</h3></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td>From :</td>
+								<td id="pickup"></td>
+							</tr>
+							<tr>
+								<td>Destination :</td>
+								<td id="des"></td>
+							</tr>
+							<tr>
+								<td><h3>Parcel Details</h3></td>
+								<td> </td>
+							</tr>
+							<tr >
+								<td>Weight :</td>
+								<td id="weight"></td>
+							</tr>
+							<tr>
+								<td>Height :</td>
+								<td id="height"></td>
+						
+							</tr>
+							<tr>
+								<td>Width :</td>
+								<td id="width"></td>
+							</tr>
+							<tr>
+								<td>Length :</td>
+								<td id="length"></td>
+							</tr>
+					
+						</table>
+						<table class="total">
+							<tr>
+								<td><h3>Price :</h3></td>
+								<td id="price"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="payment">
+				
+						<h3>Online payment</h3>
+						<div class="container">
+							<div class="box" id="pay1">
+								<img src="../IMG/visa.png" class="img" >
+							</div>
+							<div class="box" id="pay2">
+								<img src="../IMG/mastercard.jpg" class="img">
+							</div>
+							<div class="box" id="pay3">
+								<img src="../IMG/mpesa.jpg" class="img">
+							</div>
+							<div class="box" id="pay4">
+								<img src="../IMG/airtel.jpg" class="img">
+							</div>
+							<div class="box" id="pay5">
+								<img src="../IMG/mtn.jpeg" class="img">
+							</div>
+							<div class="box" id="pay6">
+								<img src="../IMG/equity.png" class="img">
+							</div>
+						</div>
+						<form class="modalForm">
+							<input type="text" name="horder" id="holder" placeholder="Holder name">
+						
+							<input type="text" name="card" id="" placeholder="Card Number">
+						
+							<input type="date" name="date" id="date" placeholder="Expiration Date">
+						
+							<input type="TEXT" name="cvc" id="cvc" placeholder="CVC Code">
+						
+							<div>
+								<button class="payorder">PAY</button>
+								<button>Cancel</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">	
+				<a href="index.html" id="modal-cancel">Cancel</a>
+				<a href="signin.html" id="modal-continue">Continue</a>
+			</div>
+		</div>
+    </div>
+	<div class="formdiv">
+        <div class="box" id="location">
+            <h3>Locations</h3>
+            <form class="formIndex">
+                <select name="pickup" id="pickuplo" placeholder="Pick up location">
+                    <option value="">Pick up location</option>
+                      <option value="Gikondo">Gikondo</option>
+                      <option value="Kagarama">Kagarama</option>
+                      <option value="Kanombe">Kanombe</option>
+                      <option value="Muhima">Muhima</option>
+                      <option value="Kicukiro">Kicukiro</option>
+                      <option value="Kacyiru">Kacyiru</option>
+                      <option value="Remera">Remera</option>
+                      <option value="Nyamirambo">Nyamirambo</option>
+                      <option value="Kimihurura">Kimihurura</option>
+                      <option value="Kimisagara">Kimisagara</option>
+                      <option value="Gitega">Gitega</option>
+                  </select>
+                <br>
+                
+                <input type="text" name="Destination" id="Destination" placeholder="Destination">
+            </form>
+        </div>
+
+        <div class="box" id="parcel">
+                <h3>Parcel details</h3>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Parcel Name">
+            
+                <input type="number" name="weight" id="weight" placeholder="Weight in kg">
+                
+                <input type="number" name="width" id="width" placeholder="Width in cm">
+                
+                <input type="number" name="height" id="height" placeholder="Height in cm">
+                
+                <input type="number" name="length" id="length" placeholder="Length in cm">
+            </form>
+        </div>
+        
+        <div class="box" id="sendorder" >
+            <button id="orderBtn">Send</button>
+        </div>
+
+    </div>	
+			
+    
