@@ -11,4 +11,8 @@ export default class User {
 		users.push(newuser)
 		res.json(users[users.length-1])
 	}
+	static getUserbyId(req,res){
+		const user= users.find(item=>item.id===parseInt(req.params.id, 10))
+		res.json(user)
+	}
 }

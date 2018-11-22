@@ -13,5 +13,15 @@ export default class Parcels {
 		parcels.push(newparcel)
 		res.json(parcels[parcels.length-1])
 	}
+	static getParcebyId(req, res){
+		const parcel = parcels.find(item=>item.id === parseInt(req.params.id, 10))
+		res.json(parcel)
+	}
+	static canceParcel(req, res){
+		const parcel= parcels.find(item=>item.id === parseInt(req.params.id, 10))
+		let index = parcels.indexOf(parcel)
+		const updatedParcel= parcels[index] ={...parcel, ...req.body}
+		res.json(updatedParcel)
+	}
 
 }
