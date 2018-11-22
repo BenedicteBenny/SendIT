@@ -4,5 +4,5 @@ console.log(User)
 const routers = Router()
 
 routers.get('/users', User.allUsers)
-
+routers.post('/users', User.create)
 export default routers
