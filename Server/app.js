@@ -1,10 +1,20 @@
-import joi from 'joi'
-import express from 'express'
-import routers from './routes'
+// import joi from 'joi'
+const express = require('express');
+const routers = require('./routes');
+const bodyParser = require('body-parser');
 const app= express();
-app.use(express.json())
 
-const body=require('body-parser').json()
-app.use('/api/v1/', routers)
-const port= process.env.PORT || 3000
-	app.listen(port, () => console.log(`Listening on port ${port}`));
+
+app.use(express.json());
+
+app.use(bodyParser.urlencoded({ extended: false }))
+ 
+app.use(bodyParser.json())
+
+app.use('/api/v1/', routers);
+
+const PORT = process.env.PORT || 3000;
+
+const server = app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+
+module.exports = server;

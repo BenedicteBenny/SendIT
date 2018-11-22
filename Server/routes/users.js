@@ -1,6 +1,6 @@
-import {Router} from 'express'
+import { Router } from 'express'
 import User from '../controllers/users'
-console.log(User)
+// console.log(User)
 const routers = Router()
 
 routers.get('/users', User.allUsers)
