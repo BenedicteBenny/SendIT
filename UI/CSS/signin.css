@@ -1,0 +1,84 @@
+body{
+	font:15px/1.5 Arial, Helvetica, sans-serif;
+}
+
+
+/*Global*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/*Header*/
+
+header{
+	width: 100%;
+	padding-top: 0px;
+	background-color: #ffffff;
+}
+
+#logo{
+	text-align: center;
+	color:#321f20;
+	border-bottom: solid 1px #d1d1d1;
+
+}
+#title{
+	text-align: center;
+}
+.formsignin{
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding: 40px;
+	background-color: #231f20; 
+}
+
+form input{
+	width: 40%;
+    padding: .5em .25em;
+    margin: 2% 10%;   
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    border: solid 1px #eaeaea;
+    background-color: #231f20;
+    color: #eaeaea;
+}
+input:hover{
+	border: solid 1px #ad974f;
+	opacity: 0.7;
+}
+button{
+	background-color: #ad974f;
+	padding:10px 20px 10px 20px;
+	width: 20%;
+	text-align: center;
+	border: solid 1px #231f20;
+	color: #eaeaea;
+	font-size: 16px;
+	}
+button:hover{
+	background-color: #8e793e;
+}
+
+.anychange ul a{
+	color: #eaeaea;
+}
+
+.anychange ul a:hover{
+	color: #8e793e;
+}
+
+footer p{
+	text-align: center;
+	background-color: #eaeaea;
+	color: #231f20;
+	padding: 10px 0 10px 0;
+}
