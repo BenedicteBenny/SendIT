@@ -14,6 +14,12 @@ module.exports = {
     "no-unused-vars": 0,
     "import/newline-after-import": 0,
     "import/order": 0,
-    "import/no-unresolved": 0
+    "import/no-unresolved": 0,
+    "prefer-const": 0,
+    "comma-dangle": 0,
+    "no-shadow": 0,
+    "no-console": 0,
+    "consistent-return": 0,
+    "linebreak-style": 0
   }
 };

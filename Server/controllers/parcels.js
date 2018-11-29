@@ -11,7 +11,7 @@ export default class Parcels {
       parcelName: Joi.string().required(),
       pickup: Joi.string().required(),
       destination: Joi.string().required(),
-      weight: Joi.number().required(),
+      weight: Joi.number().required()
     };
     const output = Joi.validate(req.body, schema);
     if (output.error) {
@@ -24,25 +24,25 @@ export default class Parcels {
       parcelName: req.body.parcelName,
       pickup: req.body.pickup,
       destination: req.body.destination,
-      weight: req.body.weight,
+      weight: req.body.weight
     };
 
     parcels.push(newparcel);
-    res.send(parcels[parcels.length - 1]);
+    res.status(201).json(parcels[parcels.length - 1]);
   }
 
   static getParcebyId(req, res) {
     const parcel = parcels.find(
-      item => item.id === parseInt(req.params.id, 10),
+      item => item.id === parseInt(req.params.id, 10)
     );
     !parcel
       ? res.status(404).send('The parcel the ID entered is not found')
-      : res.send(parcel);
+      : res.json(parcel);
   }
 
   static canceParcel(req, res) {
     const parcel = parcels.find(
-      item => item.id === parseInt(req.params.id, 10),
+      item => item.id === parseInt(req.params.id, 10)
     );
     if (!parcel) {
       res.status(404).send('The parcel the ID entered is not found');
@@ -52,7 +52,7 @@ export default class Parcels {
       parcelName: Joi.string().required(),
       pickup: Joi.string().required(),
       destination: Joi.string().required(),
-      weight: Joi.number().required(),
+      weight: Joi.number().required()
     };
     const output = Joi.validate(req.body, schema);
     if (output.error) {
