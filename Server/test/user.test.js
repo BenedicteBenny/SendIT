@@ -1,8 +1,3 @@
-// let mongoose = require("mongoose");
-// import User from '../models/users';
-
-// Require the dev-dependencies
-// import Chai from 'chai';
 import chaiHttp from 'chai-http';
 import server from '../app';
 

@@ -3,6 +3,6 @@ import parcelRouters from './parcels';
 import userRouters from './users';
 
 const allRouters = Router();
-allRouters.use(parcelRouters, userRouters)
+allRouters.use(parcelRouters, userRouters);
 
-export default allRouters
+export default allRouters;
