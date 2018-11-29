@@ -1,0 +1,26 @@
+{
+  "name": "sendit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "joi": "^14.3.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7"
+  },
+  "scripts": {
+    "test": "mocha ./Server/test/*.test.js",
+    "start": "nodemon --exec babel-node Server/app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
