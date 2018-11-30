@@ -44,7 +44,7 @@ describe('/Post new user ', () => {
     };
     chai
       .request(server)
-      .post('/api/v1/users/')
+      .post('/api/v1/sign_up')
       .send(user)
       .end((err, res) => {
         res.should.have.status(201);
