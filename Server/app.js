@@ -2,7 +2,6 @@
 import express from 'express';
 import allRouters from './routes';
 import bodyParser from 'body-parser';
-
 import dotenv from 'dotenv';
 const app = express();
 

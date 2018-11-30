@@ -20,6 +20,7 @@ module.exports = {
     "no-shadow": 0,
     "no-console": 0,
     "consistent-return": 0,
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "no-multi-spaces": 0
   }
 };

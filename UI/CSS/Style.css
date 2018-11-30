@@ -1,18 +1,27 @@
 body{
-	font:15px/1.5 Arial, Helvetica, sans-serif;
+	font:15px/1.5 Vernada, sans-serif;
+	padding: 0 20%;
+	background: #d1d1d1;
+
 }
 
 
 /*Global*/
 .container{
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	overflow: hidden;
+	
 }
 
 ul{
 	margin: 0;
 	padding: 0;
+}
+.whole{
+	border: solid 1px #d1d1d1;
+	background: #ffffff;
+	box-shadow: 15px 15px 8px grey
 }
 
 /*Header*/
@@ -29,41 +38,45 @@ header{
 	border-bottom: solid 1px #d1d1d1;
 
 }
-header a{
-	color:#321f20;
+/*Showcase*/
+#showcase a{
+	color:#e7e7e7;
 	text-decoration: none;
 	font-size: 16px;
 	display: block;
-	padding:12px 12px;
+	padding:12px 0;
 	width: 100px;
 	text-decoration: none;
 	text-align:center;
 }
-header a:hover{
+#showcase a:hover{
 	color: #ad974f;
 }
-header .current a{
+#showcase .current a{
 	border-bottom: solid 3px #ad974f;
 }
 
-header ul li{
-	float:left;
+#showcase ul li{
+	float: left;
 	display: inline;	
 
 }
-header ul{
+#showcase ul{
 	margin-left: 25%;
 }
-/*Showcase*/
+
 #showcase{
-	background-image: url("../IMG/origine.jpg") ;
+	background-image: url("../IMG/image.jpg") ;
 	background-size: cover;
 	height: 55%;
 	text-align: center;
-	
+}
+.center{
+	padding: 10% 20%;
 }
 #textAlt{
 	color:#e7e7e7;
+	text-align: center;
 }
 .formdiv{
 	box-sizing: border-box;
@@ -106,12 +119,11 @@ header ul{
 
 #getStarted a:hover, #getStarted a:focus {
 	background-color: #8e793e;
+	color: #e7e7e7;
+	width: 32%;
 
 }
-#parceloda a:hover, #parceloda a:focus {
-	background-color: #8e793e;
 
-}
 form select{
 	width: 92%;
 }
@@ -155,10 +167,19 @@ input[type=number]::-webkit-outer-spin-button{
 /*Overview*/
 #Overview{
 	text-align: center;
+	padding: 0 	10%;
 }
+
 
 #Overview h1{
 	color:#321f20;
+}
+
+#Overview .box{
+	float: left;
+	width: 40%;
+	padding: 10px;
+	text-align: center;
 }
 
 #howework h1{
@@ -209,7 +230,7 @@ footer p{
 }
 
 .formsignin button{
-	background-color: #ad974f;
+	background-color: #f8f0d5;
 	padding:10px 20px 10px 20px;
 	text-align: center;
 	border: solid 1px #231f20;

@@ -1,0 +1,113 @@
+body{
+	font:15px/1.5 Vernada, sans-serif;
+	padding: 0 20%;
+	background: #d1d1d1;
+
+}
+
+
+/*Global*/
+.container{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+.whole{
+	border: solid 1px #d1d1d1;
+	background: #ffffff;
+	box-shadow: 15px 15px 8px grey
+}
+
+/*Header*/
+
+header{
+	width: 100%;
+	padding-top: 0px;
+	background-color: #ffffff;
+}
+
+#logo{
+	text-align: center;
+	color:#321f20;
+	border-bottom: solid 1px #d1d1d1;
+
+}
+#showcase a{
+	color:#e7e7e7;
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+	padding:12px 0;
+	width: 100px;
+	text-decoration: none;
+	text-align:center;
+}
+#showcase a:hover{
+	color: #ad974f;
+}
+#showcase .current a{
+	border-bottom: solid 3px #ad974f;
+}
+
+#showcase ul li{
+	float: left;
+	display: inline;	
+
+}
+#showcase ul{
+	margin-left: 25%;
+}
+
+#showcase{
+	background: #321f20 ;
+	background-size: cover;
+	height: 55%;
+    text-align: center;
+    
+}
+
+table{
+    width: 100%;
+    margin: 0%;
+    padding:5%
+}
+th,tr{
+    text-align: center;
+    height: 50px;
+}
+
+tr:hover {
+    background-color: #bbb9b9;
+}
+
+tr:nth-child(even):hover{
+    background-color: #bbb9b9;
+}
+
+table th{
+    font-size: 18px
+}
+table tr{
+    font-size: 16px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+footer p{
+	text-align: center;
+	background-color: #eaeaea;
+	color: #231f20;
+	padding: 10px 0 10px 0;
+}
+.anychange ul a{
+	color: #eaeaea;
+}
+
+.anychange ul a:hover{
+	color: #8e793e;
+}
