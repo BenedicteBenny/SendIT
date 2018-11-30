@@ -16,7 +16,7 @@ const accessControl = (req, res, next) => {
       }
       return res.status(403).send({
         success: false,
-        message: 'NOt authorized to perform this action'
+        message: 'Not authorized to perform this action'
       });
     }
 

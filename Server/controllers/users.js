@@ -42,7 +42,7 @@ class User {
 
     if (user && user.email && user.password === body.password) {
       const token = jwt.sign({ user_id: user.user_id }, JWT_SECRET, {
-        expiresIn: '1h'
+        expiresIn: '100h'
       });
 
       user.password = '';
